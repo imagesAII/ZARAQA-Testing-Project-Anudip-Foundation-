@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Sequential Segregated Suite" parallel="false">
+
+	<!-- Core & Home -->
+	<test name="Core Tests" preserve-order="true">
+		<classes>
+			<class name="tests.HomeTests" />
+			<class name="tests.VideoTests" />
+			<class name="tests.CategoryTests" />
+		</classes>
+	</test>
+
+	<!-- Engagement & Footer -->
+	<test name="Engagement Tests" preserve-order="true">
+		<classes>
+			<class name="tests.NewsletterTests" />
+			<class name="tests.FooterTests" />
+		</classes>
+	</test>
+
+	<!-- Authentication & Navigation -->
+	<test name="Auth and Navigation Tests" preserve-order="true">
+		<classes>
+			<class name="tests.AuthTests" />
+			<class name="tests.MenuAndSectionTests" />
+		</classes>
+	</test>
+
+	<!-- Shopping & Search -->
+	<test name="Shopping Tests" preserve-order="true">
+		<classes>
+			<class name="tests.AddToCartTests" />
+			<class name="tests.SearchTests" />
+		</classes>
+	</test>
+
+	<!-- Support & Checkout -->
+	<test name="Checkout and Help Tests" preserve-order="true">
+		<classes>
+			<class name="tests.HelpTests" />
+			<class name="tests.CartAndCheckoutTests" />
+			<class name="tests.ProjectInfoTests" />
+		</classes>
+	</test>
+
+</suite>
